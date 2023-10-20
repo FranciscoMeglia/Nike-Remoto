@@ -1,0 +1,125 @@
+.footer {
+    width: 95%;
+    height: auto;
+    background-color: black;
+    margin: 20px auto 0px;
+}
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-card {
+    width: 300px;
+    min-height: 300px;
+    height: auto;
+}
+
+.footer .footer-card i {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.452);
+    padding: 30px 4px;
+    transition: 0.2s;
+}
+
+.footer .footer-card i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer .footer-card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 30px 30px;
+    font-weight: 600;
+}
+
+.footer .footer-card:nth-child(2) ul {
+    list-style: none;
+    padding: 0px 30px;
+}
+
+.footer .footer-card:nth-child(3) ul {
+    list-style: none;
+    padding: 0px 30px;
+}
+
+.footer .footer-card:nth-child(3) ul li a ,
+.footer .footer-card:nth-child(2) ul li a {
+    color: rgba(255, 255, 255, 0.473);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer .footer-card:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer .footer-card:nth-child(4) img:first-child {
+    padding-top: 30px;
+}
+
+.footer .footer-card:nth-child(4) img {
+    padding: 10px 10px;
+    width: 140px;
+} 
+
+.footer .footer-copyright {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-copyright .copyright-1 {
+    width: auto;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .footer-copyright .copyright-1 p:nth-child(1) {
+    color: rgba(255, 255, 255, 0.473);
+    margin: 0;
+}
+
+.footer .footer-copyright .copyright-1 p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.473);
+    margin: 0;
+}
+
+.footer .footer-copyright .copyright-1 p:nth-child(2) a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-copyright .copyright-2 {
+    width: auto;
+    height: 100%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .footer-copyright .copyright-2 a {
+    color: rgba(255, 255, 255, 0.473);
+    text-decoration: none;
+    font-size: 15px;
+}

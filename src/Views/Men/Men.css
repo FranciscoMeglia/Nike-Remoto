@@ -1,0 +1,24 @@
+.men {
+    width: 100%;
+    height: 100vh;
+}
+
+.men .men-filters {
+    width: 95%;
+    height: 100px;
+    margin: 50px auto;
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+.men .men-container {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

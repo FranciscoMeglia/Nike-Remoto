@@ -1,0 +1,56 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.card {
+    width: 500px;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    /* border-top-right-radius: 60px; 
+    border-top-left-radius: 60px; */
+    transition: 0.2s;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 15px  rgba(0, 0, 0, 0.411);
+    scale: 0.95;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    /* border-top-right-radius: 60px; 
+    border-top-left-radius: 60px; 
+    border: 1px solid rgb(170, 170, 170); */
+}
+
+.card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:20px 0px 5px 30px;
+    font-weight: 800;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin:5px 0px 5px 30px;
+}
+
+.card .card-prices {
+    display: flex;
+    gap: 20px;
+}
+
+.card .card-prices p:last-child {
+    text-decoration-line: line-through ;
+    text-decoration-color: red;
+}

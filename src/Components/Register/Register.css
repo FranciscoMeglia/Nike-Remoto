@@ -1,0 +1,52 @@
+.register {
+   background-image: url(../../assets/bg-registro.png);
+   background-position: center;
+   background-size: cover;
+   width: 95%;
+   margin: 0px auto;
+   height: 400px;
+   display: flex;
+   align-items: center;
+}
+
+.register .register-info {
+    width: 40%;
+    margin-left: 70px;
+}
+
+.register .register-info h2 {
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: start;
+    color: white;
+    line-height: 80%;
+    margin-bottom:50px ;
+}
+
+.register .register-info p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: start;
+    color: white;
+    line-height: 80%;
+    margin-bottom:50px ;
+}
+
+.register .register-info .btn-reg {
+    padding: 10px 20px 10px 20px;
+    border: solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 23px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.register .register-info .btn-reg:hover {
+    background-color: black;
+    color: white;
+    border: solid white;
+}

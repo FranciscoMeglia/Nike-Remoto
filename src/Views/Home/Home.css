@@ -1,0 +1,290 @@
+.home {
+    width: 100%;
+    height: auto;
+}
+
+.home hr {
+    height: 2px;
+    width: 95%;
+    margin: 65px auto;
+    background-color: black;
+    
+}
+
+/* BANNER SECTION */
+.home .container-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container-banner .banner {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/db73b34f-44cb-42e6-9d4c-7138b287a0ec/buscador-de-zapatillas-de-running.jpg);
+}
+
+.home .container-banner .banner h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: white;
+    opacity: 1;
+}
+
+.home .container-banner .banner p {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+/* INFO SECTION */
+.info {
+    width: 100%;
+    height: auto;
+}
+
+.info .title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.info .title h2 {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+
+.info .title p {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.info .title a {
+    padding: 15px 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.info .title a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* POTENCE SECTION */
+.potence {
+    width: 100%;
+    height: auto;
+}
+
+.potence .img {
+    width: 95%;
+    margin: 0 auto;
+    height: 600px;
+    background-image: url(https://jdsportsblog.s3.amazonaws.com/wp-content/uploads/2018/05/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.potence .title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.potence .title h2 {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+
+.potence .title p {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.potence .title a {
+    padding: 15px 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.potence .title a:hover {
+    background-color: black;
+    color: white;
+}
+
+.home .potence hr {
+    height: 2px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.potence .oferts-title {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.potence .oferts-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.potence .carrusel {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.potence .carrusel .carousel {
+    width: 100%;
+    height: auto;
+}
+
+.potence .carrusel .carousel .carousel-item .contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* GENDER SECTION */
+.gender {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 0px;
+}
+
+.gender-container {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+
+.gender-container .men {
+    width: 47%;
+    height: 700px;
+    background-image: url(https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/de4714b2-e631-4e6a-89d9-afa2f16434cf/calzado-vestimenta-y-accesorios-para-hombre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gender-container .women {
+    width: 47%;
+    height: 700px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5600d74ae4b0ce794739dab1/1454027765650-0KU845RQ3GJT3HYPGRTC/Nike_WomensTraining_0012.jpg?format=2500w);
+    background-size: cover;
+    background-position: center;
+}
+
+.gender-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender-title .title-men {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gender-title .title-women {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gender-title  .title-women a {
+    padding: 12px 51px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.gender-title .title-man a {
+    padding: 15px 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.gender-title  a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+

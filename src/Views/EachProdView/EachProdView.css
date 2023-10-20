@@ -1,0 +1,46 @@
+.eachProdView {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.eachProdView-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.eachProdView-container-1 {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.eachProdView-container-2 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.eachProdView-container-2 .addCart button {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.eachProdView-container-2 .addCart button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
