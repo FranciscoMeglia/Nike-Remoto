@@ -6,7 +6,7 @@ import { Footer } from '../../Components/Footer/Footer'
 import { useState } from 'react'
 import { Filters } from '../../Components/Filters/Filters'
 
-export const Men = ({dataApi , cart}) => {
+export const Men = ({dataApi , cart , setCart }) => {
 
   const [data, setData] = useState([])
   const [typePorduct , setTypeProduct] = useState("todo")
@@ -17,7 +17,7 @@ export const Men = ({dataApi , cart}) => {
 
   return (
     <section className="men">
-      <Nav cart={cart}></Nav>
+      <Nav cart={cart} setCart={setCart}></Nav>
       <div className="men-filters">
         <Filters setTypeProduct={setTypeProduct} setPrice={setPrice} setSize={setSize}></Filters>
       </div>

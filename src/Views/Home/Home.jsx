@@ -6,7 +6,7 @@ import { Footer } from '../../Components/Footer/Footer'
 import { Register } from '../../Components/Register/Register'
 import { Link } from 'react-router-dom'
 
-export const Home = ({dataApi , cart}) => {
+export const Home = ({dataApi , cart , setCart}) => {
 
   const [data, setData] = useState([])
 
@@ -14,7 +14,7 @@ export const Home = ({dataApi , cart}) => {
 
   return (
     <div className="home">
-      <Nav cart={cart}></Nav>
+      <Nav cart={cart} setCart={setCart}></Nav>
       <div className="container-banner">
         <div className="banner">
           {/* <h2>HASTA 50% DE DESCUENTO</h2>
@@ -25,7 +25,7 @@ export const Home = ({dataApi , cart}) => {
         <div className="title">
           <h2>POTENCIA TU ENTRENAMIENTO</h2>
           <p>ESTE DIA DE LA MADRE REGALA LO MEJOR , REGALA NIKE</p>
-          <a href="">COMPRAR</a>
+          <Link to={"/Mujer"}>COMPRAR</Link>
         </div>
       </section>
       <section className="potence">
@@ -33,7 +33,7 @@ export const Home = ({dataApi , cart}) => {
         <div className="title">
           <h2>LA MEJOR ELECCION</h2>
           <p>AIR FORCE 1 LOW RETRO</p>
-          <a href="">COMPRAR</a>
+          <Link to={"/producto/Nike%20Air%20Force%201%20Low%20Retro"}>COMPRAR</Link>
         </div>
         <hr />
         <div className="oferts-title">

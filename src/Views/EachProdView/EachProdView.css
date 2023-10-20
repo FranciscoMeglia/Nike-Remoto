@@ -29,6 +29,16 @@
     justify-content: center;
 }
 
+.eachProdView-container-2 .prices {
+    display: flex;
+    gap: 20px;
+}
+
+.eachProdView-container-2 .prices .disscount {
+    text-decoration: line-through red;
+    
+}
+
 .eachProdView-container-2 .addCart button {
     width: 300px;
     height: 50px;

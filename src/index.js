@@ -9,6 +9,7 @@ import { Women } from './Views/Women/Women';
 import { Oferts } from './Views/Oferts/Oferts'
 import { Home } from './Views/Home/Home';
 import { EachProdView } from './Views/EachProdView/EachProdView';
+import { Cart } from './Views/Cart/Cart';
 
 const Index = () => {
  
@@ -32,19 +33,16 @@ const Index = () => {
     setCart(updatedCart);
   }
 
-  // const deleteFromCart = (prod) => {
-  //   console.log("borrar")
-  // }
-
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<Home dataApi={fetchDataFromAPI} cart={cart}/>} />
-      <Route path="/Ofertas" element={<Oferts dataApi={fetchDataFromAPI} cart={cart}/> } />
-      <Route path="/Hombre" element={<Men dataApi={fetchDataFromAPI} cart={cart}/> } />
-      <Route path="/Mujer" element={<Women dataApi={fetchDataFromAPI} cart={cart}/> } />
+      <Route path="/" element={<Home dataApi={fetchDataFromAPI} cart={cart} setCart={setCart} /> } />
+      <Route path="/Ofertas" element={<Oferts dataApi={fetchDataFromAPI} cart={cart} setCart={setCart}/> } />
+      <Route path="/Hombre" element={<Men dataApi={fetchDataFromAPI} cart={cart} setCart={setCart}/> } />
+      <Route path="/Mujer" element={<Women dataApi={fetchDataFromAPI} cart={cart} setCart={setCart}/> } />
+      <Route path="/Carrito" element={<Cart cart={cart} setCart={setCart}></Cart>} />
       {dataApi.map((prod) => (
-          <Route key={prod.nombre} path={`/producto/${prod.nombre}`} element={<EachProdView prod={prod} addToCart={addToCart} cart={cart}></EachProdView>} />
+          <Route key={prod.nombre} path={`/producto/${prod.nombre}`} element={<EachProdView prod={prod} addToCart={addToCart} cart={cart} setCart={setCart}></EachProdView>} />
         ))}
     </Routes>
   </Router>
