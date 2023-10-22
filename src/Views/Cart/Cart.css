@@ -1,0 +1,223 @@
+/* IF CART HAS PRODUCTS */
+.cart-container {
+    width: 95%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cart-container .products-details {
+    width: 65%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+}
+
+.cart-container .products-details .products-details-titles {
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container .products-details .products-details-titles .prod-name {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container .products-details .products-details-titles .prod-name p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.cart-container .products-details .products-details-titles .prod-info {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-right: 100px;
+}
+
+.cart-container .products-details .products-details-titles .prod-info p {
+    font-size: 17px;
+    margin: 0;
+}
+
+
+/* prod card */
+.prod-card {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.prod-card-name {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prod-card-name img {
+    width: 100px;
+}
+
+.prod-card-name p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.prod-card-info {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-right: 10px;
+}
+
+.prod-card-info img {
+    width: 17px;
+    cursor: pointer;
+}
+
+.prod-card-info p {
+    font-size: 25px;
+    margin: 0;
+}
+
+/* RESUME */
+.cart-container .resume {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+    text-align: center;
+}
+
+.cart-container .resume h3 {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.cart-container .resume .resume-subtotal {
+    width: 95%;
+    height: 30px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container .resume .resume-ship {
+    width: 95%;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container .resume .resume-total {
+    width: 95%;
+    height: 30px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(122, 122, 122);
+}
+
+.cart-container .resume .resume-ship p,
+.cart-container .resume .resume-subtotal p ,
+.cart-container .resume .resume-total p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.cart-container .resume button {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    margin: 10px auto;
+    transition: 0.2s;
+}
+
+.cart-container .resume button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cart-container .resume a {
+    display: block;
+    margin-top: 5px;
+}
+/* IF CART IS EMPTY */
+.cart-empty {
+    width: 95%;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-empty-message {
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+}
+
+.cart-empty-message h3 {
+    padding: 20px;
+}
+
+.cart-empty-message p {
+    padding-bottom: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cart-empty-message a {
+    padding: 20px 80px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.2s;
+}
+
+.cart-empty-message a:hover {
+    background-color: white;
+    color: black;
+}

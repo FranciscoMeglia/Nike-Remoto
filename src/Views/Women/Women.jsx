@@ -28,9 +28,9 @@ export const Women = ({dataApi , cart , setCart }) => {
             const resto = (prod.precio * prod.porcentageOferta) / 100;
             const nuevoPrecio = prod.precio - resto;
 
-            return <Card titulo={prod.nombre} img={prod.img} subtitulo={prod.descripcion} precio={"$" + prod.precio} precioOferta={"$" + Math.round(nuevoPrecio)}></Card>
+            return <Card titulo={prod.nombre} img={prod.img} subtitulo={prod.descripcion} precio={"$" + prod.precio} precioOferta={"$" + Math.round(nuevoPrecio)} id={prod.id} key={prod.id}></Card>
           } else {
-            return <Card titulo={prod.nombre} img={prod.img} subtitulo={prod.descripcion} precioOferta={"$" + prod.precio}></Card>
+            return <Card titulo={prod.nombre} img={prod.img} subtitulo={prod.descripcion} precioOferta={"$" + prod.precio} id={prod.id} key={prod.id}></Card>
           }
         })} 
       </div>

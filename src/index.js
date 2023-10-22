@@ -42,7 +42,7 @@ const Index = () => {
       <Route path="/Mujer" element={<Women dataApi={fetchDataFromAPI} cart={cart} setCart={setCart}/> } />
       <Route path="/Carrito" element={<Cart cart={cart} setCart={setCart}></Cart>} />
       {dataApi.map((prod) => (
-          <Route key={prod.nombre} path={`/producto/${prod.nombre}`} element={<EachProdView prod={prod} addToCart={addToCart} cart={cart} setCart={setCart}></EachProdView>} />
+          <Route key={prod.id} path={`/producto/${prod.id}/${prod.nombre}`} element={<EachProdView prod={prod} addToCart={addToCart} cart={cart} setCart={setCart}></EachProdView>} />
         ))}
     </Routes>
   </Router>

@@ -36,10 +36,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .contenedor-filters hr{
     margin-top: 20px;
-    width: 90%;
+    width: 100% !important;
     border: solid 2px;
 }

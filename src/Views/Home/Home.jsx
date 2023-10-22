@@ -47,7 +47,7 @@ export const Home = ({dataApi , cart , setCart}) => {
                   {data.filter((prod) => prod.oferta).slice(0, 3).map((prod) => {
                     const resto = (prod.precio * prod.porcentageOferta) / 100;
                     const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`}></Card>
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>
@@ -56,7 +56,7 @@ export const Home = ({dataApi , cart , setCart}) => {
                   {data.filter((prod) => prod.oferta).slice(3, 6).map((prod) => {
                     const resto = (prod.precio * prod.porcentageOferta) / 100;
                     const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`}></Card>
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>
@@ -65,7 +65,7 @@ export const Home = ({dataApi , cart , setCart}) => {
                   {data.filter((prod) => prod.oferta).slice(6, 9).map((prod) => {
                     const resto = (prod.precio * prod.porcentageOferta) / 100;
                     const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`}></Card>
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>

@@ -37,8 +37,8 @@ export const Footer = () => {
                 </div>
                 <div className="footer-card">
                     <i className="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-youtube"></i>
+                    <i className="fa-brands fa-square-facebook"></i>
+                    <i className="fa-brands fa-square-youtube"></i>
                     <i className="fa-brands fa-square-instagram"></i>
                 </div>
             </div>
