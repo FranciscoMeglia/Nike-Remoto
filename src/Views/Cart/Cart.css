@@ -1,4 +1,9 @@
 /* IF CART HAS PRODUCTS */
+.carrousel-container {
+    width: 95%;
+    margin: 30px auto 0px;
+}
+
 .cart-container {
     width: 95%;
     height: auto;

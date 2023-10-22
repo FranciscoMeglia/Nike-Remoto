@@ -17,8 +17,6 @@ export const Home = ({dataApi , cart , setCart}) => {
       <Nav cart={cart} setCart={setCart}></Nav>
       <div className="container-banner">
         <div className="banner">
-          {/* <h2>HASTA 50% DE DESCUENTO</h2>
-          <p>ADQUIRIENDO NUESTROS PRODUCTOS POR LA WEB</p> */}
         </div>
       </div>
       <section className="info">

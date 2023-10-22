@@ -36,10 +36,10 @@ export const Footer = () => {
                     <img src={sid} alt="sid logo" />
                 </div>
                 <div className="footer-card">
-                    <i className="fa-brands fa-square-twitter"></i>
-                    <i className="fa-brands fa-square-facebook"></i>
-                    <i className="fa-brands fa-square-youtube"></i>
-                    <i className="fa-brands fa-square-instagram"></i>
+                    <a href="https://twitter.com/Nike?" target='blank'><i className="fa-brands fa-square-twitter"></i></a> 
+                    <a href="https://www.facebook.com/nike/?locale=es_LA" target='blank'><i className="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.youtube.com/@nike" target='blank'><i className="fa-brands fa-square-youtube"></i></a> 
+                    <a href="https://www.instagram.com/nike/" target='blank'><i className="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
             <div className="footer-copyright">

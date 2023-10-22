@@ -16,7 +16,7 @@ export const CarrouselOferts = () => {
       </div>
       <div className="carousel-item">
         <p>Envios a todo el país</p>
-        <h5> Sin costo en compras mayores a $5000</h5>
+        <h5> Sin costo en compras mayores a $50.000</h5>
       </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

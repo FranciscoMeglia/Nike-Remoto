@@ -2,6 +2,8 @@ import React from 'react'
 import './Cart.css'
 import { Nav } from '../../Components/Navbar/Nav'
 import { Link } from 'react-router-dom'
+import trashIcon from '../../assets/trash-icon.webp'
+import { CarrouselOferts } from '../../Components/CarrouselOferts/CarrouselOferts'
 
 export const Cart = ({ cart, setCart }) => {
 
@@ -25,8 +27,11 @@ export const Cart = ({ cart, setCart }) => {
   return (
     <div className="cart">
       <Nav cart={cart} setCart={setCart}></Nav>
+      <div className="carrousel-container">
+      <CarrouselOferts></CarrouselOferts>
+      </div>
       {cart.length > 0 ?
-        <div className="cart-container">
+        <div className="cart-container">  
           <div className="products-details">
             <div className="products-details-titles">
               <div className="prod-name">
@@ -49,7 +54,7 @@ export const Cart = ({ cart, setCart }) => {
                     <p>$ {prod.precio}</p>
                     <p>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</p>
                     <p>$ {cart.filter((prod2) => prod2.nombre === prod.nombre).length * prod.precio}</p>
-                    <img src="https://static.vecteezy.com/system/resources/previews/021/352/964/original/trash-icon-recycle-and-trash-sign-symbol-icon-free-png.png" alt="trash icon" onClick={() => { removeProduct(prod.nombre) }} />
+                    <img src={trashIcon} alt="trash icon" onClick={() => { removeProduct(prod.nombre) }} />
                   </div>
                 </div>
               })}
@@ -62,11 +67,11 @@ export const Cart = ({ cart, setCart }) => {
             </div>
             <div className="resume-ship">
               <p>ENVIO</p>
-              <p>$ {shipPrice}</p>
+              <p>$ {totalCart >= 50000 ? 0 : shipPrice}</p>
             </div>
             <div className="resume-total">
               <p>TOTAL</p>
-              <p>$ {totalCart + shipPrice}</p>
+              <p>$ {totalCart >= 50000 ? totalCart : totalCart + shipPrice}</p>
             </div>
             <button>INICIAR PAGO</button>
             <Link to={"/"}>Seguir comprando</Link>

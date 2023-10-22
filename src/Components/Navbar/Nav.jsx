@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Nav.css'
 import logoNike from '../../assets/20602d43cc993811e5a6bd1886af4f33.png'
 import { Link } from 'react-router-dom'
+import cartIcon from '../../assets/cart-icon.png'
+import trashIcon from '../../assets/trash-icon.webp'
 
 export const Nav = ({ cart , setCart }) => {
 
@@ -31,7 +33,7 @@ export const Nav = ({ cart , setCart }) => {
       </div>
       
       <div className="nav-cart">
-        <img src="https://cdn-icons-png.flaticon.com/512/4021/4021651.png" alt="cart icon" onClick={() => {setShowCart(true)}} />
+        <img src={cartIcon} alt="cart icon" onClick={() => {setShowCart(true)}} />
         <p className='cart-number'>{cart.length}</p>
         {showCart ?
           <div className="cart-prods" onMouseLeave={() => {setShowCart(false)}}>
@@ -47,7 +49,7 @@ export const Nav = ({ cart , setCart }) => {
                   <div className="price">
                     <h3>$ {prod.oferta ? Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio}</h3>
                     <h3>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</h3>
-                    <img src="https://static.vecteezy.com/system/resources/previews/021/352/964/original/trash-icon-recycle-and-trash-sign-symbol-icon-free-png.png" alt="trash icon" onClick={() => {removeProduct(prod.nombre)}}/>
+                    <img src={trashIcon} alt="trash icon" onClick={() => {removeProduct(prod.nombre)}}/>
                   </div>
                 </div>
               </div>
