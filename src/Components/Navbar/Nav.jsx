@@ -29,15 +29,18 @@ export const Nav = ({ cart , setCart }) => {
           <li><Link to={"/Mujer"} className='link'>Mujer</Link></li>
         </ul>
       </div>
+      
       <div className="nav-cart">
         <img src="https://cdn-icons-png.flaticon.com/512/4021/4021651.png" alt="cart icon" onClick={() => {setShowCart(true)}} />
-        <p>{cart.length}</p>
+        <p className='cart-number'>{cart.length}</p>
         {showCart ?
           <div className="cart-prods" onMouseLeave={() => {setShowCart(false)}}>
+            <h3 className='prod-titulo'>MI COMPRA</h3>
+            <hr />
             {cart.filter((item, index) => { return cart.indexOf(item) === index; })
             .slice(0 , 2)
             .map((prod) => {
-              return <div className="prod">
+              return<div className='prod'>
                 <img src={prod.img} alt="img prod" />
                 <div className="info">
                   <h3>{prod.nombre}</h3>

@@ -1,0 +1,23 @@
+.carousel-ofertas{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 15px 0px; 
+}
+
+.carousel-ofertas .carousel-item p{
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.carousel-ofertas .carousel-item h5{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
