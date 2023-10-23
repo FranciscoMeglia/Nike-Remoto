@@ -8,18 +8,16 @@ import trashIcon from '../../assets/trash-icon.webp'
 export const Nav = ({ cart, setCart }) => {
 
   const [showCart, setShowCart] = useState(false)
+  const [navMobile, setNavMobile] = useState("nav")
 
   const removeProduct = (productName) => {
-
     const index = cart.findIndex((prod) => prod.nombre === productName)
-
     const updatedCart2 = [...cart.slice(0, index), ...cart.slice(index + 1)];
-
     setCart(updatedCart2)
   }
 
   return (
-    <nav className="nav">
+    <nav className={navMobile}>
       <div className="nav-logo">
         <img src={logoNike} alt="nike logo" />
         <Link to={"/"}><h1>NIKE</h1></Link>
@@ -31,7 +29,7 @@ export const Nav = ({ cart, setCart }) => {
           <li><Link to={"/Mujer"} className='link'>Mujer</Link></li>
         </ul>
       </div>
-      <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/navicon-round_icon-icons.com_50087.png" alt="asdad" className="navBtn" />
+      {navMobile === "nav" ? <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/navicon-round_icon-icons.com_50087.png" alt="nav icon" className="navBtn" onClick={() => {setNavMobile("navMobile")}}/> : <img src="https://static.thenounproject.com/png/392999-200.png" alt="close icon" className='navClose' onClick={() => {setNavMobile("nav")}}/>}
       <div className="nav-cart">
         <img src={cartIcon} alt="cart icon" onClick={() => { setShowCart(true) }} />
         <p className='cart-number'>{cart.length}</p>

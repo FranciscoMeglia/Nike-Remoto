@@ -226,3 +226,15 @@
     background-color: white;
     color: black;
 }
+
+@media screen and (max-width: 1000px) {
+    .cart .cart-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart .cart-container .products-details ,
+    .cart .cart-container .resume {
+        width: 100%;
+    }
+}

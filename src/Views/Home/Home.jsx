@@ -85,14 +85,12 @@ export const Home = ({ dataApi, cart, setCart }) => {
       <hr />
       <section className='gender'>
         <div className="gender-container">
-          <div className="men"></div>
-          <div className="women"></div>
-        </div>
-        <div className="gender-title">
-          <div className="title-man">
+          <div className="men-1">
+            <div className="men"></div>
             <Link to={"/Hombre"}>Hombre</Link>
           </div>
-          <div className="title-women">
+          <div className="women-1">
+            <div className="women"></div>
             <Link to={"/Mujer"}>Mujer</Link>
           </div>
         </div>
