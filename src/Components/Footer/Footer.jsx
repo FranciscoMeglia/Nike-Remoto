@@ -36,9 +36,9 @@ export const Footer = () => {
                     <img src={sid} alt="sid logo" />
                 </div>
                 <div className="footer-card">
-                    <a href="https://twitter.com/Nike?" target='blank'><i className="fa-brands fa-square-twitter"></i></a> 
+                    <a href="https://twitter.com/Nike?" target='blank'><i className="fa-brands fa-square-twitter"></i></a>
                     <a href="https://www.facebook.com/nike/?locale=es_LA" target='blank'><i className="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.youtube.com/@nike" target='blank'><i className="fa-brands fa-square-youtube"></i></a> 
+                    <a href="https://www.youtube.com/@nike" target='blank'><i className="fa-brands fa-square-youtube"></i></a>
                     <a href="https://www.instagram.com/nike/" target='blank'><i className="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export const Footer = () => {
                     <div>
                         <p>Argentina</p>
                     </div>
-                    <p>© 2023 Creada con fines educativos por <a href="#">@Francisco Meglia</a> y <a href="#">@Facundo Oviedo</a></p>
+                    <p>© 2023 Creada con fines educativos por <a href="https://www.linkedin.com/in/franciscomeglia/" target='blank'>@Francisco Meglia</a> y <a href="#" target='blank'>@Facundo Oviedo</a></p>
                 </div>
                 <div className="copyright-2">
                     <a href="#">Términos y Condiciones</a>

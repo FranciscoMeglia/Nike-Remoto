@@ -6,7 +6,7 @@ import { Footer } from '../../Components/Footer/Footer'
 import { Register } from '../../Components/Register/Register'
 import { Link } from 'react-router-dom'
 
-export const Home = ({dataApi , cart , setCart}) => {
+export const Home = ({ dataApi, cart, setCart }) => {
 
   const [data, setData] = useState([])
 
@@ -31,49 +31,52 @@ export const Home = ({dataApi , cart , setCart}) => {
         <div className="title">
           <h2>LA MEJOR ELECCION</h2>
           <p>AIR FORCE 1 LOW RETRO</p>
-          <Link to={"/producto/Nike%20Air%20Force%201%20Low%20Retro"}>COMPRAR</Link>
+          <Link to={"/producto/13/Nike%20Air%20Force%201%20Low%20Retro"}>COMPRAR</Link>
         </div>
         <hr />
         <div className="oferts-title">
           <p>OFERTAS</p>
         </div>
-        <div className="carrusel">
+        <div className="carrousel">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <div className="contenedor">
-                  {data.filter((prod) => prod.oferta).slice(0, 3).map((prod) => {
-                    const resto = (prod.precio * prod.porcentageOferta) / 100;
-                    const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
+                  {data.filter((prod) => prod.oferta)
+                  .slice(0, 3)
+                  .map((prod) => {
+                    const newPrice = prod.precio * (100 - prod.porcentageOferta) / 100;
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(newPrice)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>
               <div className="carousel-item">
                 <div className='contenedor'>
-                  {data.filter((prod) => prod.oferta).slice(3, 6).map((prod) => {
-                    const resto = (prod.precio * prod.porcentageOferta) / 100;
-                    const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
+                  {data.filter((prod) => prod.oferta)
+                  .slice(3, 6)
+                  .map((prod) => {
+                    const newPrice = prod.precio * (100 - prod.porcentageOferta) / 100;
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(newPrice)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>
               <div className="carousel-item">
                 <div className="contenedor">
-                  {data.filter((prod) => prod.oferta).slice(6, 9).map((prod) => {
-                    const resto = (prod.precio * prod.porcentageOferta) / 100;
-                    const nuevoPrecio = prod.precio - resto;
-                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(nuevoPrecio)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
+                  {data.filter((prod) => prod.oferta)
+                  .slice(6, 9)
+                  .map((prod) => {
+                    const newPrice = prod.precio * (100 - prod.porcentageOferta) / 100;
+                    return <Card img={prod.img} titulo={prod.nombre} subtitulo={prod.descripcion} precioOferta={`$ ${Math.round(newPrice)}`} precio={`$ ${prod.precio}`} id={prod.id} key={prod.id}></Card>
                   })}
                 </div>
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style={{ width: "32px" }}>
-              <span className="carousel-control-prev-icon" aria-hidden="true" style={{ backgroundColor: "black" , borderRadius: "100%"}}></span>
+              <span className="carousel-control-prev-icon" aria-hidden="true" style={{ backgroundColor: "black", borderRadius: "100%" }}></span>
               <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style={{ width: "32px" }}>
-              <span className="carousel-control-next-icon" aria-hidden="true" style={{ backgroundColor: "black" , borderRadius: "100%"}}></span>
+              <span className="carousel-control-next-icon" aria-hidden="true" style={{ backgroundColor: "black", borderRadius: "100%" }}></span>
               <span className="visually-hidden">Next</span>
             </button>
           </div>
@@ -82,15 +85,15 @@ export const Home = ({dataApi , cart , setCart}) => {
       <hr />
       <section className='gender'>
         <div className="gender-container">
-        <div className="men"></div>
-        <div className="women"></div>
+          <div className="men"></div>
+          <div className="women"></div>
         </div>
         <div className="gender-title">
           <div className="title-man">
             <Link to={"/Hombre"}>Hombre</Link>
           </div>
           <div className="title-women">
-            <Link to={"/Mujer"}>Mujer</Link>  
+            <Link to={"/Mujer"}>Mujer</Link>
           </div>
         </div>
       </section>

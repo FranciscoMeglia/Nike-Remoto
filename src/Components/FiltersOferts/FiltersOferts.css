@@ -4,9 +4,9 @@
     justify-content: center;
 }
 
-.linea-divisoria hr{
+.line-division hr{
     margin-top: 20px;
-    width: 90%;
+    width: 100% !important;
     border: solid 2px;
 }
 

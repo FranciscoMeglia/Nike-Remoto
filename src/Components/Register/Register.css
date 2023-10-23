@@ -65,17 +65,20 @@
     flex-direction: column;
     border: solid 1px grey;
 }
-.register .register-form img{
+
+.register .register-form img    {
     width: 80px;
     margin-bottom: 18px;
 }
-.register .register-form h2{
+
+.register .register-form h2 {
     font-size: 23px;
     font-weight: 700;
     color: black;
     margin-bottom: 50px;
 }
-.register .register-form input{
+
+.register .register-form input {
     width: 450px;
     height: 10%;
     padding: 0px 25px;
@@ -87,7 +90,8 @@
     color: rgb(139, 139, 139);
     font-size: 1.4rem;
   }
-  .register .register-form button{
+
+  .register .register-form button {
     width: 450px;
     height: 10%;
     background-color: black;
@@ -98,16 +102,18 @@
     border-radius: 5px;
     margin-bottom: 35px;
   }
-  .register .register-form p, h5{
+
+  .register .register-form p, h5 {
     color: rgb(155, 155, 155);
   }
-  .register .register-form h5{
+  
+  .register .register-form h5 {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 35px;
   }
 
-  .register .register-form p{
+  .register .register-form p {
     font-size: 15px;
     width: 60%;
   }

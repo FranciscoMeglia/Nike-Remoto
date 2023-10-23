@@ -2,7 +2,7 @@ import React from 'react'
 import './FiltersOferts.css'
 import { CarrouselOferts } from '../CarrouselOferts/CarrouselOferts'
 
-export const FiltersOferts = ({setTypeProduct , setSize , setPrice , setGender}) => {
+export const FiltersOferts = ({ setTypeProduct, setSize, setPrice, setGender }) => {
 
     const changeValueProduct = (e) => {
 
@@ -18,39 +18,39 @@ export const FiltersOferts = ({setTypeProduct , setSize , setPrice , setGender})
     }
 
 
-  return (
-    <div>
-        <CarrouselOferts></CarrouselOferts>
-        <div className="filters">
-            <div className="filters-typeOfProducts">
-                <h3>Tipo de Producto</h3>
-                <select name="typeProduct" id="typeProduct" onChange={changeValueProduct}>
-                    <option value="todo">TODOS</option>
-                    <option value="zapatilla">ZAPATILLAS</option>
-                    <option value="remera" >REMERAS</option>
-                    <option value="pantalon">PANTALONES</option>
-                    <option value="buzo">BUZOS</option>
-                </select>
+    return (
+        <div>
+            <CarrouselOferts></CarrouselOferts>
+            <div className="filters">
+                <div className="filters-typeOfProducts">
+                    <h3>Tipo de Producto</h3>
+                    <select name="typeProduct" id="typeProduct" onChange={changeValueProduct}>
+                        <option value="todo">TODOS</option>
+                        <option value="zapatilla">ZAPATILLAS</option>
+                        <option value="remera" >REMERAS</option>
+                        <option value="pantalon">PANTALONES</option>
+                        <option value="buzo">BUZOS</option>
+                    </select>
+                </div>
+                <div className="filters-typeOfProducts">
+                    <h3>Género</h3>
+                    <select name="" id="" onChange={changeValueGender}>
+                        <option value="todo">TODOS</option>
+                        <option value="hombre">HOMBRE</option>
+                        <option value="mujer">MUJER</option>
+                    </select>
+                </div>
+                <div className="filters-typeOfProducts">
+                    <h3>Precio Mayor/Menor</h3>
+                    <select name="" id="" onChange={changeValuePrice}>
+                        <option value="menor">MENOR/MAYOR</option>
+                        <option value="mayor">MAYOR/MENOS</option>
+                    </select>
+                </div>
             </div>
-            <div className="filters-typeOfProducts">
-                <h3>Género</h3>
-                <select name="" id="" onChange={changeValueGender}>
-                    <option value="todo">TODOS</option>
-                    <option value="hombre">HOMBRE</option>
-                    <option value="mujer">MUJER</option>
-                </select>
-            </div>
-            <div className="filters-typeOfProducts">
-                <h3>Precio Mayor/Menor</h3>
-                <select name="" id="" onChange={changeValuePrice}>
-                    <option value="menor">MENOR/MAYOR</option>
-                    <option value="mayor">MAYOR/MENOS</option>
-                </select>
+            <div className='line-division'>
+                <hr />
             </div>
         </div>
-        <div className='linea-divisoria'>
-            <hr />
-        </div>
-    </div>
-  )
+    )
 }

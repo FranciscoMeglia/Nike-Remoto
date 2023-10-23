@@ -10,6 +10,14 @@
     justify-content: space-between;
 }
 
+.nav .navBtn {
+    position: absolute;
+    right: 30px;
+    width: 45px;
+    display: none;
+    cursor: pointer;
+}
+
 .nav .nav-logo {
     width: 33%;
     height: 100%;
@@ -76,7 +84,7 @@
 .nav-cart .cart-prods {
     position: absolute;
     bottom: -230px;
-    width: 280px;
+    width: 310px;
     height: 250px;
     border-radius: 5px;
     z-index: 10;
@@ -95,7 +103,7 @@
     display: flex;
 }
 
-.nav-cart .cart-prods .prod-descripcion{
+.nav-cart .cart-prods .prod-descripcion {
     display: flex;
 }
 
@@ -126,7 +134,7 @@
 }
 
 .nav-cart .cart-prods button {
-    width: 260px;
+    width: 290px;
     height: 40px;
     border-radius: 5px;
     border: 2px solid black;
@@ -148,25 +156,41 @@
     margin: 0;
     position: absolute;
     bottom: 10px;
-    left: 7px;
+    left: 20px;
 }
 
-.nav-cart .cart-number{
+.nav-cart .cart-number {
     background-color: black;
     color: white;
-    padding: 4px 10px;
+    padding: 4px 11px;
     border-radius: 100%;
     margin-right: 10px;
     font-weight: 800;
     font-size: 17px;
 }
 
-.nav-cart .cart-prods .prod-titulo{
+.nav-cart .cart-prods .prod-title {
     font-weight: 700;
     font-size: 23px;
-    margin:8px 0px 8px 12px;
+    margin: 8px 0px 8px 12px;
 }
-.nav-cart .cart-prods hr{
+
+.nav-cart .cart-prods hr {
     margin: 0px 0px 12px 12px;
     width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav .nav-links {
+        display: none;
+    }
+
+    .nav .nav-cart {
+        margin-right: 60px;
+        width: auto;
+    }
+
+    .nav .navBtn {
+        display: block;
+    }
 }

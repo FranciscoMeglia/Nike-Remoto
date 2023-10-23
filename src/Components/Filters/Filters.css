@@ -31,15 +31,14 @@
     height: 30%;
 }
 
-
-.contenedor-filters  .linea-divisoria{
+.filter-container .line-divison {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.contenedor-filters hr{
+.filter-container hr {
     margin-top: 20px;
     width: 100% !important;
     border: solid 2px;

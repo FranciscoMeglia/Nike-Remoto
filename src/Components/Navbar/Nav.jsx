@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import cartIcon from '../../assets/cart-icon.png'
 import trashIcon from '../../assets/trash-icon.webp'
 
-export const Nav = ({ cart , setCart }) => {
+export const Nav = ({ cart, setCart }) => {
 
   const [showCart, setShowCart] = useState(false)
 
@@ -31,29 +31,29 @@ export const Nav = ({ cart , setCart }) => {
           <li><Link to={"/Mujer"} className='link'>Mujer</Link></li>
         </ul>
       </div>
-      
+      <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/navicon-round_icon-icons.com_50087.png" alt="asdad" className="navBtn" />
       <div className="nav-cart">
-        <img src={cartIcon} alt="cart icon" onClick={() => {setShowCart(true)}} />
+        <img src={cartIcon} alt="cart icon" onClick={() => { setShowCart(true) }} />
         <p className='cart-number'>{cart.length}</p>
         {showCart ?
-          <div className="cart-prods" onMouseLeave={() => {setShowCart(false)}}>
-            <h3 className='prod-titulo'>MI COMPRA</h3>
+          <div className="cart-prods" onMouseLeave={() => { setShowCart(false) }}>
+            <h3 className='prod-title'>MI COMPRA</h3>
             <hr />
             {cart.filter((item, index) => { return cart.indexOf(item) === index; })
-            .slice(0 , 2)
-            .map((prod) => {
-              return<div className='prod'>
-                <img src={prod.img} alt="img prod" />
-                <div className="info">
-                  <h3>{prod.nombre}</h3>
-                  <div className="price">
-                    <h3>$ {prod.oferta ? Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio}</h3>
-                    <h3>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</h3>
-                    <img src={trashIcon} alt="trash icon" onClick={() => {removeProduct(prod.nombre)}}/>
+              .slice(0, 2)
+              .map((prod) => {
+                return <div className='prod'>
+                  <img src={prod.img} alt="img prod" />
+                  <div className="info">
+                    <h3>{prod.nombre}</h3>
+                    <div className="price">
+                      <h3>$ {prod.oferta ? Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio}</h3>
+                      <h3>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</h3>
+                      <img src={trashIcon} alt="trash icon" onClick={() => { removeProduct(prod.nombre) }} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            })}
+              })}
             {cart.length > 0 ? <Link to={"/Carrito"}><button>VER CARRITO</button></Link> : <p>NO HAY PRODUCTOS EN EL CARRITO</p>}
           </div> : ""}
       </div>

@@ -16,22 +16,21 @@ export const Cart = ({ cart, setCart }) => {
     setCart(updatedCart2)
   }
 
-  let totalCart = 0 ;
-  let shipPrice = 3240 ;
+  let totalCart = 0;
+  let shipPrice = 3240;
 
-  for(let i = 0; i < cart.length ; i++) {
+  for (let i = 0; i < cart.length; i++) {
     totalCart += cart[i].precio
-
   }
 
   return (
     <div className="cart">
       <Nav cart={cart} setCart={setCart}></Nav>
       <div className="carrousel-container">
-      <CarrouselOferts></CarrouselOferts>
+        <CarrouselOferts></CarrouselOferts>
       </div>
       {cart.length > 0 ?
-        <div className="cart-container">  
+        <div className="cart-container">
           <div className="products-details">
             <div className="products-details-titles">
               <div className="prod-name">
@@ -47,11 +46,11 @@ export const Cart = ({ cart, setCart }) => {
               .map((prod) => {
                 return <div className='prod-card'>
                   <div className="prod-card-name">
-                    <img src={prod.img} alt="product img" />
-                    <p>{prod.nombre}</p>
+                    <Link to={`/producto/${prod.id}/${prod.nombre}`}><img src={prod.img} alt="product img" /></Link>
+                    <Link to={`/producto/${prod.id}/${prod.nombre}`}><p>{prod.nombre}</p></Link>
                   </div>
                   <div className="prod-card-info">
-                    <p>$ {prod.precio}</p>
+                    <p>$ {prod.oferta ? Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio}</p>
                     <p>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</p>
                     <p>$ {cart.filter((prod2) => prod2.nombre === prod.nombre).length * prod.precio}</p>
                     <img src={trashIcon} alt="trash icon" onClick={() => { removeProduct(prod.nombre) }} />
