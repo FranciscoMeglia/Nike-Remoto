@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Register.css'
-import logoNike from '../../assets/20602d43cc993811e5a6bd1886af4f33.png'
+import logoNike from '../../assets/nike-logo.png'
 
 export const Register = () => {
     

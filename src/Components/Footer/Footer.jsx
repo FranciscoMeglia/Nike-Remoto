@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import preciosJustos from '../../assets/db22a4c4-96cd-48d2-ba08-5ee9052133e6___2bdd91f33fc0a69a75e084e39192e8ea.webp'
-import sid from '../../assets/Renaper-logo___2cfbcdca6b0b070808af1c579ff76dd9.webp'
+import preciosJustos from '../../assets/Precios-Justos.webp'
+import sid from '../../assets/Renaper-Logo.webp'
 
 export const Footer = () => {
     return (

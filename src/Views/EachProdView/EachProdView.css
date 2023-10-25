@@ -1,7 +1,7 @@
 .eachProdView {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .eachProdView-container {
@@ -40,6 +40,10 @@
     gap: 5px;
 }
 
+.eachProdView-container-2 h3 {
+    font-size: 20px;
+}
+
 .eachProdView-container-2 .size {
     width: auto;
     height: auto;
@@ -56,7 +60,7 @@
 .eachProdView-container-2 .each-size {
     width: 40px;
     height: 40px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -78,7 +82,7 @@
 .eachProdView-container-2 .each-size-offstock {
     width: 40px;
     height: 40px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -107,17 +111,17 @@
 .eachProdView-container-2 .addCart button {
     width: 300px;
     height: 50px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     border: 2px solid black;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 600;
     transition: 0.2s;
 }
 
 .eachProdView-container-2 .addCart button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-width: 1000px) {
@@ -142,6 +146,19 @@
 @media screen and (max-width: 600px) {
     .eachProdView .eachProdView-container .container {
         width: 95%;
-        height: 700px;
+        height: auto;
+    }
+
+    .eachProdView .eachProdView-container .container .eachProdView-container-1 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .eachProdView .eachProdView-container .container .eachProdView-container-2 {
+        height: auto;
+    }
+
+    .eachProdView .eachProdView-container .container .eachProdView-container-2 .addCart {
+        padding-bottom: 10px;
     }
 }

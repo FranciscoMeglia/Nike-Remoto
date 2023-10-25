@@ -10,7 +10,7 @@ a:hover {
 .card {
     width: 500px;
     height: 650px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     transition: 0.2s;
 }
 

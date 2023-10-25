@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(../../assets/buscador-de-zapatillas-de-running.jpg);
+    background-image: url(../../assets/banner.jpg);
 }
 
 .home .container-banner .banner h2 {
@@ -105,7 +105,7 @@
     width: 95%;
     margin: 0 auto;
     height: 600px;
-    background-image: url(https://jdsportsblog.s3.amazonaws.com/wp-content/uploads/2018/05/banner-1.jpg);
+    background-image: url(../../assets/air-force.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -234,7 +234,7 @@
 .gender-container .men-1 .men {
     width: 100%;
     height: 700px;
-    background-image: url(https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/de4714b2-e631-4e6a-89d9-afa2f16434cf/calzado-vestimenta-y-accesorios-para-hombre.jpg);
+    background-image: url(../../assets/men-banner.webp);
     background-size: cover;
     background-position: center;
 }
@@ -242,7 +242,7 @@
 .gender-container .women-1 .women {
     width: 100%;
     height: 700px;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/5600d74ae4b0ce794739dab1/1454027765650-0KU845RQ3GJT3HYPGRTC/Nike_WomensTraining_0012.jpg?format=2500w);
+    background-image: url(../../assets/women-banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -285,7 +285,8 @@
 
 @media screen and (max-width: 600px) {
     .home .container-banner .banner {
-        background-image: url(../../assets/banner-mobile.jpg);
+        background-image: url(../../assets/banner-mobile-1.jpg);
+        background-size: cover;
         background-position: center;
     }
 

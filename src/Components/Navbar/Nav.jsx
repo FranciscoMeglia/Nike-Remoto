@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './Nav.css'
-import logoNike from '../../assets/20602d43cc993811e5a6bd1886af4f33.png'
+import logoNike from '../../assets/nike-logo.png'
 import { Link } from 'react-router-dom'
 import cartIcon from '../../assets/cart-icon.png'
 import trashIcon from '../../assets/trash-icon.webp'
+import navIcon from '../../assets/nav-icon.png'
+import closeIcon from '../../assets/close-icon.png'
 
 export const Nav = ({ cart, setCart }) => {
 
@@ -29,7 +31,7 @@ export const Nav = ({ cart, setCart }) => {
           <li><Link to={"/Mujer"} className='link'>Mujer</Link></li>
         </ul>
       </div>
-      {navMobile === "nav" ? <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/navicon-round_icon-icons.com_50087.png" alt="nav icon" className="navBtn" onClick={() => {setNavMobile("navMobile")}}/> : <img src="https://static.thenounproject.com/png/392999-200.png" alt="close icon" className='navClose' onClick={() => {setNavMobile("nav")}}/>}
+      {navMobile === "nav" ? <img src={navIcon} alt="nav icon" className="navBtn" onClick={() => {setNavMobile("navMobile")}}/> : <img src={closeIcon} alt="close icon" className='navClose' onClick={() => {setNavMobile("nav")}}/>}
       <div className="nav-cart">
         <img src={cartIcon} alt="cart icon" onClick={() => { setShowCart(true) }} />
         <p className='cart-number'>{cart.length}</p>
