@@ -8,7 +8,7 @@
 }
 
 .filters .filters-typeOfProducts {
-    width: 200px;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-.filters .filters-typeOfProducts  h3 {
+.filters .filters-typeOfProducts h3 {
     font-size: 20px;
     margin: 0;
     font-weight: 600;
@@ -42,4 +42,15 @@
     margin-top: 20px;
     width: 100% !important;
     border: solid 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .filters .filters-typeOfProducts h3 {
+        font-size: 15px;
+    }
+
+    .filters .filters-typeOfProducts select {
+        width: 140px;
+        font-size: 15px;
+    }
 }

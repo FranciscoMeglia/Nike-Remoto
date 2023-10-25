@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/db73b34f-44cb-42e6-9d4c-7138b287a0ec/buscador-de-zapatillas-de-running.jpg);
+    background-image: url(../../assets/buscador-de-zapatillas-de-running.jpg);
 }
 
 .home .container-banner .banner h2 {
@@ -281,6 +281,22 @@
     .gender .gender-container .men-1 ,
     .gender .gender-container .women-1 {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home .container-banner .banner {
+        background-image: url(../../assets/banner-mobile.jpg);
+        background-position: center;
+    }
+
+    .gender .gender-container .men-1 ,
+    .gender .gender-container .women-1 {
+        height: 550px;
+    }
+
+    .potence .img {
+        height: 400px;
     }
 }
 

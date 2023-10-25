@@ -5,8 +5,8 @@
 
 .men .men-filters {
     width: 95%;
-    height: 100px;
-    margin: 30px auto 150px auto;
+    height: auto;
+    margin: 30px auto 20px auto;
     background-color: white;
 
 }

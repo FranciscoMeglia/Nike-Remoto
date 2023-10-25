@@ -19,9 +19,9 @@ export const FiltersOferts = ({ setTypeProduct, setSize, setPrice, setGender }) 
 
 
     return (
-        <div>
+        <div className='filters-oferts-container'>
             <CarrouselOferts></CarrouselOferts>
-            <div className="filters">
+            <div className="filters-oferts">
                 <div className="filters-typeOfProducts">
                     <h3>Tipo de Producto</h3>
                     <select name="typeProduct" id="typeProduct" onChange={changeValueProduct}>

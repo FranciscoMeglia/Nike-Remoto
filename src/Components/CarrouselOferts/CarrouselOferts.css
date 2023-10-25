@@ -1,4 +1,4 @@
-.carousel-ofertas{
+.carousel-ofertas {
     background-color: black;
     height: 100px;
     display: flex;
@@ -7,7 +7,7 @@
     margin: 0px 0px 15px 0px; 
 }
 
-.carousel-ofertas .carousel-item p{
+.carousel-ofertas .carousel-item p {
     color: white;
     text-align: center;
     margin: 0px;
@@ -15,9 +15,15 @@
     font-weight: 700;
 }
 
-.carousel-ofertas .carousel-item h5{
+.carousel-ofertas .carousel-item h5 {
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-ofertas .carousel-item p {
+        font-size: 20px;
+    }
 }
 

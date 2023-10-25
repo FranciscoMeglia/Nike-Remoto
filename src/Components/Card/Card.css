@@ -54,3 +54,10 @@ a:hover {
     text-decoration-line: line-through ;
     text-decoration-color: red;
 }
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 91vw;
+        height: 550px;
+    }
+}
