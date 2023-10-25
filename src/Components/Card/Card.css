@@ -11,8 +11,6 @@ a:hover {
     width: 500px;
     height: 650px;
     background-color: rgb(255, 255, 255);
-    /* border-top-right-radius: 60px; 
-    border-top-left-radius: 60px; */
     transition: 0.2s;
 }
 
@@ -27,9 +25,6 @@ a:hover {
     height: 80%;
     background-size: cover;
     background-position: center;
-    /* border-top-right-radius: 60px; 
-    border-top-left-radius: 60px; 
-    border: 1px solid rgb(170, 170, 170); */
 }
 
 .card h3 {
@@ -57,7 +52,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     .card {
-        width: 91vw;
+        width: 94vw;
         height: 550px;
     }
 }

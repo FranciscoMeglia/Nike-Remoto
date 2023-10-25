@@ -7,8 +7,7 @@
     height: 2px;
     width: 95%;
     margin: 65px auto;
-    background-color: black;
-    
+    background-color: black;   
 }
 
 /* BANNER SECTION */
@@ -297,6 +296,11 @@
 
     .potence .img {
         height: 400px;
+    }
+
+    .potence .title h2 ,
+    .info .title h2 {
+        font-size: 40px;
     }
 }
 

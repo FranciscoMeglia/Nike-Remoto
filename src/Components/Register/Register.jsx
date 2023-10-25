@@ -3,6 +3,7 @@ import './Register.css'
 import logoNike from '../../assets/20602d43cc993811e5a6bd1886af4f33.png'
 
 export const Register = () => {
+    
     const [show, setShow] = useState(false)
 
     return (

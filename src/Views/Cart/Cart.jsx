@@ -81,7 +81,9 @@ export const Cart = ({ cart, setCart }) => {
           <div className="cart-empty-message">
             <h3>Su carrito esta vacio</h3>
             <p>Para seguir comprando, navegar por las categorías en el sitio, o buscar su producto presione.</p>
-            <Link to={"/"}>SEGUIR COMPRANDO</Link>
+            <div className='continue-btn'>
+              <Link to={"/"}><button>SEGUIR COMPRANDO</button></Link>
+            </div>
           </div>
         </div>}
     </div>

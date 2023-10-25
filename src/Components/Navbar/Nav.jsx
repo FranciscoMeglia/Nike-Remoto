@@ -36,6 +36,7 @@ export const Nav = ({ cart, setCart }) => {
         {showCart ?
           <div className="cart-prods" onMouseLeave={() => { setShowCart(false) }}>
             <h3 className='prod-title'>MI COMPRA</h3>
+            <img src="https://static.thenounproject.com/png/392999-200.png" alt="close icon" className='closeBtn' onClick={() => {setShowCart(false)}}/>
             <hr />
             {cart.filter((item, index) => { return cart.indexOf(item) === index; })
               .slice(0, 2)

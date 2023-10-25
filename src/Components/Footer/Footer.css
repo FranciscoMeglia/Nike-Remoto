@@ -143,6 +143,10 @@
         display: none;
     }
 
+    .footer .footer-card:first-child h3 {
+        padding-top: 30px;
+    }
+
     .footer .footer-card:nth-child(3) ul {
         display: none;
     }

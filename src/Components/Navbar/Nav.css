@@ -92,6 +92,13 @@
     box-shadow: 2px 5px 15px rgb(99, 98, 98);
 }
 
+.nav-cart .cart-prods .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+}
+
 .nav-cart .cart-prods .prod:first-child {
     margin-top: 5px;
 }

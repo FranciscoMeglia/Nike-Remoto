@@ -3,7 +3,7 @@ import './CarrouselOferts.css'
 
 export const CarrouselOferts = () => {
   return (
-    <div id="carouselExample" className="carousel slide carousel-ofertas">
+    <div id="carouselExample" className="carousel slide carousel-oferts">
       <div className="carousel-inner">
         <div className="carousel-item active">
           <p>Oferta 50% los miercoles</p>

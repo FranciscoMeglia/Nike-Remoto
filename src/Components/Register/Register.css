@@ -138,3 +138,9 @@
         margin-left: 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .register .register-info h2 {
+        font-size: 40px;
+    }
+}
