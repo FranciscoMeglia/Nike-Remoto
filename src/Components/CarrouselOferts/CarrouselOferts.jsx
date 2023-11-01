@@ -2,6 +2,7 @@ import React from 'react'
 import './CarrouselOferts.css'
 
 export const CarrouselOferts = () => {
+  
   return (
     <div id="carouselExample" className="carousel slide carousel-oferts">
       <div className="carousel-inner">

@@ -55,7 +55,7 @@
 /* REGISTER FORM */
 .register .register-form {
     width: 40%;
-    height: 500px;
+    height: auto;
     background-color: white;
     position: absolute;
     left: 30%;
@@ -67,9 +67,18 @@
     border: solid 1px grey;
 }
 
-.register .register-form img    {
+.register .register-form .navClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.register .register-form img {
     width: 80px;
     margin-bottom: 18px;
+    padding-top: 20px;
 }
 
 .register .register-form h2 {
@@ -80,8 +89,8 @@
 }
 
 .register .register-form input {
-    width: 450px;
-    height: 10%;
+    width: 60%;
+    height: 50px;
     padding: 0px 25px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -93,8 +102,8 @@
   }
 
   .register .register-form button {
-    width: 450px;
-    height: 10%;
+    width: 60%;
+    height: 50px;
     background-color: black;
     border: none;
     color: white;
@@ -117,7 +126,10 @@
   .register .register-form p {
     font-size: 15px;
     width: 60%;
+    padding-bottom: 10px;
   }
+
+
 
   @media screen and (max-width: 1450px) {
     .register .register-info h2 {
@@ -138,10 +150,30 @@
         width: 90%;
         margin-left: 0;
     }
+
+    .register .register-form {
+        width: 60%;
+        left: 20%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .register .register-info h2 {
         font-size: 40px;
     }
+
+    .register .register-form {
+        width: 90%;
+        left: 5%;
+    }
+
+    .register .register-form input , 
+    .register .register-form button {
+        width: 90%;
+    }
+
+    .register .register-form p {
+        width: 90%;
+    }
+
 }

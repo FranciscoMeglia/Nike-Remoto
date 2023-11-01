@@ -52,7 +52,7 @@ export const Cart = ({ cart, setCart }) => {
                   <div className="prod-card-info">
                     <p>$ {prod.oferta ? Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio}</p>
                     <p>x{cart.filter((prod2) => prod2.nombre === prod.nombre).length}</p>
-                    <p>$ {cart.filter((prod2) => prod2.nombre === prod.nombre).length * prod.precio}</p>
+                    <p>$ {cart.filter((prod2) => prod2.nombre === prod.nombre).length * (prod.oferta ?  Math.round(prod.precio * (100 - prod.porcentageOferta) / 100) : prod.precio)}</p>
                     <img src={trashIcon} alt="trash icon" onClick={() => { removeProduct(prod.nombre) }} />
                   </div>
                 </div>

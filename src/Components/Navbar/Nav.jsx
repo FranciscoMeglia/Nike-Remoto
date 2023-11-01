@@ -26,12 +26,12 @@ export const Nav = ({ cart, setCart }) => {
       </div>
       <div className="nav-links">
         <ul>
-          <li><Link to={"/Ofertas"} className='link'>Ofertas</Link></li>
-          <li><Link to={"/Hombre"} className='link'>Hombre</Link></li>
-          <li><Link to={"/Mujer"} className='link'>Mujer</Link></li>
+          <li><Link to={"/Ofertas"} onClick={() => {document.body.style.overflowY = "scroll"}} className='link'>Ofertas</Link></li>
+          <li><Link to={"/Hombre"} onClick={() => {document.body.style.overflowY = "scroll"}} className='link'>Hombre</Link></li>
+          <li><Link to={"/Mujer"} onClick={() => {document.body.style.overflowY = "scroll"}} className='link'>Mujer</Link></li>
         </ul>
       </div>
-      {navMobile === "nav" ? <img src={navIcon} alt="nav icon" className="navBtn" onClick={() => {setNavMobile("navMobile")}}/> : <img src={closeIcon} alt="close icon" className='navClose' onClick={() => {setNavMobile("nav")}}/>}
+      {navMobile === "nav" ? <img src={navIcon} alt="nav icon" className="navBtn" onClick={() => {setNavMobile("navMobile") ; document.body.style.overflow = "hidden"}}/> : <img src={closeIcon} alt="close icon" className='navClose' onClick={() => {setNavMobile("nav") ; document.body.style.overflowY = "scroll"}}/>}
       <div className="nav-cart">
         <img src={cartIcon} alt="cart icon" onClick={() => { setShowCart(true) }} />
         <p className='cart-number'>{cart.length}</p>

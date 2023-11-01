@@ -4,6 +4,7 @@ import { Nav } from '../../Components/Navbar/Nav'
 import { Footer } from '../../Components/Footer/Footer'
 
 export const EachProdView = ({ prod, addToCart, cart, setCart }) => {
+  
   return (
     <div className="eachProdView">
       <Nav cart={cart} setCart={setCart}></Nav>

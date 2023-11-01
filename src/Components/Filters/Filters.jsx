@@ -2,7 +2,7 @@ import React from 'react'
 import './Filters.css'
 import { CarrouselOferts } from '../CarrouselOferts/CarrouselOferts'
 
-export const Filters = ({ setTypeProduct, setSize, setPrice }) => {
+export const Filters = ({ setTypeProduct, setPrice }) => {
 
     const changeValueProduct = (e) => {
 

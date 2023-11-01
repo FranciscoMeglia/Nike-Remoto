@@ -2,7 +2,7 @@ import React from 'react'
 import './FiltersOferts.css'
 import { CarrouselOferts } from '../CarrouselOferts/CarrouselOferts'
 
-export const FiltersOferts = ({ setTypeProduct, setSize, setPrice, setGender }) => {
+export const FiltersOferts = ({ setTypeProduct, setPrice, setGender }) => {
 
     const changeValueProduct = (e) => {
 
@@ -16,7 +16,6 @@ export const FiltersOferts = ({ setTypeProduct, setSize, setPrice, setGender }) 
     const changeValueGender = (e) => {
         setGender(e.target.value)
     }
-
 
     return (
         <div className='filters-oferts-container'>

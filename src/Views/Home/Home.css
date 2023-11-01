@@ -193,6 +193,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
 }
 
 /* GENDER SECTION */
@@ -302,6 +303,10 @@
     .potence .title h2 ,
     .info .title h2 {
         font-size: 40px;
+    }
+
+    .potence .carrousel .carousel .carousel-item .contenedor {
+        gap: 30px;
     }
 }
 

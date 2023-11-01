@@ -4,6 +4,7 @@ import preciosJustos from '../../assets/Precios-Justos.webp'
 import sid from '../../assets/Renaper-Logo.webp'
 
 export const Footer = () => {
+    
     return (
         <footer className="footer">
             <div className="footer-container">
