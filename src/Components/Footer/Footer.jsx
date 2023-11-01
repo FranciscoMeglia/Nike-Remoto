@@ -48,7 +48,7 @@ export const Footer = () => {
                     <div>
                         <p>Argentina</p>
                     </div>
-                    <p>© 2023 Creada con fines educativos por <a href="https://www.linkedin.com/in/franciscomeglia/" target='blank'>@Francisco Meglia</a> y <a href="#" target='blank'>@Facundo Oviedo</a></p>
+                    <p>© 2023 Creada con fines educativos por <a href="https://www.linkedin.com/in/franciscomeglia/" target='blank'>@Francisco Meglia</a> y <a href="https://github.com/Facundo337" target='blank'>@Facundo Oviedo</a></p>
                 </div>
                 <div className="copyright-2">
                     <a href="#">Términos y Condiciones</a>
