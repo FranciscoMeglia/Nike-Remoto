@@ -20,7 +20,7 @@ export const Register = () => {
                     <img src={logoNike} alt="logo nike" />
                     <h2>Suscribite para recibir novedades de Nike</h2>
                     <h5>¡Ingresá tu correo y enterate antes que nadie!</h5>
-                    <input type="email" name="" id="email" placeholder='Dirección de correo electrónico' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" name="" id="email" placeholder='Correo Electronico' value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <button onClick={() => { setEmail("") }}>SUSCRIBITE</button>
                     <p>Al registrarte, aceptás los Términos y Condiciones y la Política de Privacidad y Cookies de Nike.</p>
                     <p>Tus datos serán administrados por Southbay S.R.L.</p>
